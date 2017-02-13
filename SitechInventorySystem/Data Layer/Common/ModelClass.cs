@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SitechInventorySystem.Enumerations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,13 +14,13 @@ namespace SitechInventorySystem.Data_Layer.Common
 
         public void NotifyPropertyChanged(string propName)
         {
-                if(this.PropertyChanged != null)
-                        this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
         }
 
         #region Fields
         Guid _id;
         string _name;
+        RecordState _recordstate;
         #endregion Fields
 
         #region Properties
@@ -31,7 +32,7 @@ namespace SitechInventorySystem.Data_Layer.Common
                 if (_id != value)
                 {
                     _id = value;
-                    this.NotifyPropertyChanged("ID");
+                    NotifyPropertyChanged("ID");
                 }
             }
         }
@@ -43,7 +44,20 @@ namespace SitechInventorySystem.Data_Layer.Common
                 if (_name != value)
                 {
                     _name = value;
-                    this.NotifyPropertyChanged("Name");
+                    NotifyPropertyChanged("Name");
+                }
+            }
+        }
+
+        public RecordState RecordState
+        {
+            get { return _recordstate; }
+            set
+            {
+                if (_recordstate != value)
+                {
+                    _recordstate = value;
+                    NotifyPropertyChanged("RecordState");
                 }
             }
         }

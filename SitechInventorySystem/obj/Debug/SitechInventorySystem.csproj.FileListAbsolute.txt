@@ -1,0 +1,16 @@
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\MainWindow.baml
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\MainWindow.g.cs
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\Modules\Maintenance\SupplierModule.g.cs
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\App.g.cs
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem_MarkupCompile.cache
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem_MarkupCompile.lref
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\bin\Debug\SitechInventorySystem.exe.config
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\bin\Debug\SitechInventorySystem.exe
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\bin\Debug\SitechInventorySystem.pdb
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\Modules\Maintenance\SupplierModule.baml
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem.g.resources
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem.Properties.Resources.resources
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem.csproj.GenerateResource.Cache
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem.exe
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem.pdb
+F:\Github Repositories\SitechInventorySystem\SitechInventorySystem\obj\Debug\SitechInventorySystem.csprojResolveAssemblyReference.cache

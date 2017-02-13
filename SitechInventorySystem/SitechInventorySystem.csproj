@@ -62,15 +62,35 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data Layer\Common\ModelClass.cs" />
+    <Compile Include="Data Layer\Data Access\DataAccessSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DataAccessSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Data Layer\Data Access\Database.cs" />
+    <Compile Include="Data Layer\Data Access\Model Operators\BaseOperator.cs" />
+    <Compile Include="Data Layer\Data Access\Model Operators\Dictionary.cs" />
+    <Compile Include="Data Layer\Data Access\Model Operators\SupplierOperator.cs" />
     <Compile Include="Data Layer\Models\BrandModel.cs" />
+    <Compile Include="Data Layer\Models\ProductStockModel.cs" />
+    <Compile Include="Data Layer\Models\ProductTypeModel.cs" />
     <Compile Include="Data Layer\Models\SupplierModel.cs" />
-    <Compile Include="Data Layer\Models\TypeClass.cs" />
+    <Compile Include="Data Layer\Models\ProductModel.cs" />
+    <Compile Include="Enumerations\Enumerations.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Modules\Maintenance\SupplierModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\Common\Definitions.cs" />
+    <Compile Include="Modules\Maintenance\SupplierModule.xaml.cs">
+      <DependentUpon>SupplierModule.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -88,6 +108,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Data Layer\Data Access\DataAccessSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DataAccessSettings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +120,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Modules\System\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

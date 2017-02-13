@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SitechInventorySystem.Modules.Maintenance;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,25 @@ namespace SitechInventorySystem
         public MainWindow()
         {
             InitializeComponent();
-            this.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+        }
+
+        private void MainWindow1_Loaded(object sender, RoutedEventArgs e)
+        {
+            SetModule(new SupplierModule());
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void SetModule(UserControl u)
+        {
+            ModuleDockGrid.Children.Clear();
+            u.Height = double.NaN;
+            u.Width = double.NaN;
+            u.Margin = new Thickness(0);
+            ModuleDockGrid.Children.Add(u);
         }
     }
 }

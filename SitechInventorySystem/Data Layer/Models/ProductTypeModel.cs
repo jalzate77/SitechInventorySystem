@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SitechInventorySystem.Data_Layer.Models
 {
-    public class TypeClass : DataModel
+    public class ProductType : DataModel
     {
         #region Fields
         #endregion Fields
