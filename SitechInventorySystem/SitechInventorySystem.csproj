@@ -62,14 +62,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data Layer\Common\ModelClass.cs" />
-    <Compile Include="Data Layer\Data Access\DataAccessSettings.Designer.cs">
+    <Compile Include="Data Layer\Common\DataAccessSettings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>DataAccessSettings.settings</DependentUpon>
     </Compile>
     <Compile Include="Data Layer\Data Access\Database.cs" />
     <Compile Include="Data Layer\Data Access\Model Operators\BaseOperator.cs" />
-    <Compile Include="Data Layer\Data Access\Model Operators\Dictionary.cs" />
     <Compile Include="Data Layer\Data Access\Model Operators\SupplierOperator.cs" />
     <Compile Include="Data Layer\Models\BrandModel.cs" />
     <Compile Include="Data Layer\Models\ProductStockModel.cs" />
@@ -108,7 +107,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Data Layer\Data Access\DataAccessSettings.settings">
+    <None Include="Data Layer\Common\DataAccessSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>DataAccessSettings.Designer.cs</LastGenOutput>
     </None>
